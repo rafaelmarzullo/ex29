@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	int  z;
+	int  z, x=0 ;
 	float a, t ;
 	printf(" TABELA DE PREÇOS\n           R$\n1-Coca    3,50\n2-Ice     5,80\n3-Guarana 2,10\n4-Suco    1,90\n5-Cafe    0,70\n\n");
 	printf("Coloque a numeraçao do item a ser escolhido:");
@@ -44,6 +44,78 @@ int main(void)
 						scanf("%f", &a);
 						t = a - 0.70;
 					}
+
+	while(t>0)
+	{
+		while(t>=1)
+		{
+			t = t-1;
+			x++;
+			
+			printf("Seram dadas %d moedas de 1 real\n", x);
+		}
+	    while(t<1 && t>=0.50)
+		{
+			t = t - 0.50;
+			x=0;
+			x++;
+
+			printf("Seram dadas %d moedas de 0.50 centavos\n", x);
+		}
+		while(t<0.50 && t>=0.25)
+		{
+			t = t - 0.25;
+			x=0;
+			x++;
+
+			printf("Seram dadas %d moedas de 0.25 centavos\n", x);
+
+		}
+		while(t<0.25 && t>=0.10)
+		{
+			t = t - 0.10;
+			x=0;
+			x++;
+
+			printf("Seram dadas %d moedas de 0.10 centavos\n", x);
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			
 
 	return 0;
