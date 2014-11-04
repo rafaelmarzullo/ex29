@@ -101,6 +101,17 @@ int main(void)
 								}
 								printf("%d moedas de 5 centavos\n", x);
 							}
+							else 
+								if(t<0.05 && t>0)
+								{
+									while(t<0.05 && t>0)
+									{
+										t = t - 0.01;
+										x=0;
+										x++;
+									}
+									printf("%d moedas de 1 centavo", x);
+								}
 
 	}
 
