@@ -84,7 +84,7 @@ int main(void)
 						{
 							while(t<0.25 && t>=0.10)
 							{
-								t = t -0.10;
+								t = t - 0.10;
 								x=0;
 								x++;
 							}
@@ -95,23 +95,24 @@ int main(void)
 							{
 								while(t<0.10 && t>=0.05)
 								{
-									t = t -0.05;
+									t = t - 0.05;
 									x=0;
 									x++;
 								}
-								printf("%d moedas de 5 centavos\n", x);
+								printf("%d moedas de 5 centavos", x);
 							}
-							else 
-								if(t<0.05 && t<0)
+							else
+								if(t<0.05 && t>0)
 								{
-									while(t<0.05 && t<0)
+									while(t<0.05 && t>0)
 									{
-										t = t -0.010;
+										t = t - 0.05;
 										x=0;
 										x++;
 									}
-									printf("%d moedas de 1 centavos\n", x);
+									printf("%d moedas de 1 centavo", x);
 								}
+
 	}
 
 	return 0;
