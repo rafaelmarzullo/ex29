@@ -99,7 +99,7 @@ int main(void)
 									x=0;
 									x++;
 								}
-								printf("%d moedas de 5 centavos", x);
+								printf("%d moedas de 5 centavos\n", x);
 							}
 							else
 								if(t<0.05 && t>0)
