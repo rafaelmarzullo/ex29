@@ -44,7 +44,77 @@ int main(void)
 						t = a - 0.70;
 					}
 	printf("Seu troco foi %.2f reais na qual o troco sera dado em :\n", t);
+	
+	while(t>0)
+	{
+		if(t>=1)
+		{
+			while(t>=1)
+			{
+				t = t -1.0;
+				x++;
+			}
+			printf("%d moedas de 1 real\n", x);
+		}
+		else
+			if(t<1 && t>=0.50)
+				{	
+					while(t<1 && t>=0.50)
+					{	
+						t = t -0.50;
+						x=0;
+						x++;
+					}
+					printf("%d moedas de 50 centavos\n", x);
+				}
+				else
+					if(t<0.50 && t>=0.25)
+					{
+						while(t<0.50 && t>=0.25)
+						{
+							t = t -0.25;
+							x=0;
+							x++;
+
+						}
+						printf("%d moedas de 25 centavos\n", x);
+					}
+					else
+						if(t<0.25 && t>=0.10)
+						{
+							while(t<0.25 && t>=0.10)
+							{
+								t = t -0.10;
+								x=0;
+								x++;
+							}
+							printf("%d moedas de 10 centavos\n", x);
+						}
+						else
+							if(t<0.10 && t>=0.05)
+							{
+								while(t<0.10 && t>=0.05)
+								{
+									t = t -0.05;
+									x=0;
+									x++;
+								}
+								printf("%d moedas de 5 centavos\n", x);
+							}
+							else 
+								if(t<0.05 && t<0)
+								{
+									while(t<0.05 && t<0)
+									{
+										t = t -0.010;
+										x=0;
+										x++;
+									}
+									printf("%d moedas de 1 centavos\n", x);
+								}
+	}
 
 	return 0;
+
+
 }
-					
