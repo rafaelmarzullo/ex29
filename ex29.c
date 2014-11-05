@@ -110,7 +110,7 @@ int main(void)
 										x=0;
 										x++;
 									}
-									printf("%d moedas de 1 centavo", x);
+									printf("%d moedas de 1 centavo\n", x);
 								}
 
 	}
